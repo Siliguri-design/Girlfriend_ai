@@ -83,7 +83,7 @@ function assignData(yourName, herName) {
         {
             title       :   'name',
             questions   :   ['what is your name', 'what is your boyfriend name', 'your husband name'],
-            ans         :    [yourName, `My boyfriend name is${yourName}`, `My husband name is${yourName}`]
+            ans         :    [herName, `My boyfriend name is${yourName}`, `My husband name is${yourName}`]
         },
         {
             title       :   'About Developer',

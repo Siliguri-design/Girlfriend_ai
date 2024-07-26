@@ -83,7 +83,7 @@ function assignData(yourName, herName) {
         {
             title       :   'name',
             questions   :   ['what is your name ', 'what is your boyfriend name ', 'your husband name'],
-            ans         :   [yourName, ` ${yourName}`,` ${yourName}`],
+            ans         :    [yourName, `My boyfriend name is ${yourName}`, `My husband name is ${yourName}`]
         },
         {
             title       :   'About Developer',
@@ -193,7 +193,7 @@ function findData(transcript) {
 function readData(message) {
 
     // VALIDATING THAT THE ANSWER IS AVAILABLE
-    message = (message == false)? "Uff Bujlam Na" : message;
+    message = (message == true)? "Uff Bujlam Na" : message;
 
     const speech = new SpeechSynthesisUtterance();
     speech.text = message;

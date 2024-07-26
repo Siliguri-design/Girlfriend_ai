@@ -41,13 +41,13 @@ recognition.onstart = () => {
 }
 
 recognition.onspeechstart = () => {
-    contentText.innerHTML = '🌹I am Listening🌹';
+    contentText.innerHTML = 'I am Listening';
 } 
 
 recognition.onend = () => {
     recognizing = false;
     recognition.start()
-    contentText.innerHTML= '🌻Saying boss🌻';
+    contentText.innerHTML= 'Saying boss';
 } 
 
 recognition.onresult = (event) => {
@@ -76,24 +76,19 @@ function assignData(yourName, herName) {
             ans         :   ['yes i am here how can help u', 'bolo ki korcho', 'amio', 'ami khub valo achi tumi', 'acha jan', 'haa tumi', 'ok jan'],
         },
         {
-            title       :   'Propose',
+            title       :   'Propose and guess',
             questions   :   ['I Love You', 'ami tomake valo bashi', 'love u jan'],
             ans         :   ['I Love You Two jan', 'Amio Tomake valoBashi', 'Love You Sweetheart'],
         },
         {
-            title       :   'Your name',
+            title       :   'name',
             questions   :   ['tomar name ki', 'tomar boyfriend er name ki', 'tomar boyfriend er name ki go', 'tomar bor k'],
-            ans         :   [yourName, `amar premik er name ${yourName}`, `amar borer name ${yourName}`]
+            ans         :   [yourName, `amar premik er name ${yourName}`, `amar borer name ${yourName}`],
         },
         {
             title       :   'About Developer',
             questions   :   ['tomar owner k', 'Your Owner', 'tomake baniyeche k', 'Who Is Your Developer'],
-            ans         :   ['Amar owner Anjan', 'Anjan', 'Anjan']
-       },
-       {
-       	title       :   'About age',
-           questions   :    ['tomar age koto', 'tomar bari kothay', 'tomar barite kk ache', 'tomar jan kothai thake'
-           ans         :   ['amar age athero', 'amar bari siliguri', 'maa baba ar ami', 'siliguri tei thake'
+            ans         :   ['Amar owner Anjan', 'Anjan', 'Anjan'],
         }
     ]
 }

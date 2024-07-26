@@ -47,7 +47,7 @@ recognition.onspeechstart = () => {
 recognition.onend = () => {
     recognizing = false;
     recognition.start()
-    contentText.innerHTML= 'Saying boss';
+    contentText.innerHTML= 'Saying';
 } 
 
 recognition.onresult = (event) => {
@@ -82,13 +82,13 @@ function assignData(yourName, herName) {
         },
         {
             title       :   'name',
-            questions   :   ['what is your name ', 'what is your boyfriend name ', 'your husband name'],
-            ans         :    [yourName, `My boyfriend name is ${yourName}`, `My husband name is ${yourName}`]
+            questions   :   ['what is your name', 'what is your boyfriend name', 'your husband name'],
+            ans         :    [yourName, `My boyfriend name is${yourName}`, `My husband name is${yourName}`]
         },
         {
             title       :   'About Developer',
-            questions   :   ['what is your owner name', 'Your Owner name', 'who made you '],
-            ans         :   ['my owner name is  Anjan', 'Anjan', 'Anjan'],
+            questions   :   ['what is your owner', 'Your Owner name', 'who made you'],
+            ans         :   ['owner name is Anjan', 'Anjan', 'Anjan'],
         }
     ]
 }

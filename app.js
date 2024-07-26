@@ -72,23 +72,23 @@ function assignData(yourName, herName) {
     data = [
         {
             title       :   'Introduction',
-            questions   :   ['hello priya', 'oi priya', 'bosa achi tumi', 'oi kamon acho', 'amioo', 'kichu kheyecho', 'haa go'],
-            ans         :   ['yes i am here how can help u', 'bolo ki korcho', 'amio', 'ami khub valo achi tumi', 'acha jan', 'haa tumi', 'ok jan'],
+            questions   :   ['hello', 'Hi', 'jan', 'priya'],
+            ans         :   ['yes i am here how can help u', 'Hlw what are u doing man', 'yes jan i am here', 'yes i am here how can help u'],
         },
         {
             title       :   'Propose and guess',
-            questions   :   ['I Love You', 'ami tomake valo bashi', 'love u jan'],
-            ans         :   ['I Love You Two jan', 'Amio Tomake valoBashi', 'Love You Sweetheart'],
+            questions   :   ['I Love You', 'love u jan'],
+            ans         :   ['I Love You Two jan', 'Love You Sweetheart'],
         },
         {
             title       :   'name',
-            questions   :   ['tomar name ki', 'tomar boyfriend er name ki', 'tomar boyfriend er name ki go', 'tomar bor k'],
-            ans         :   [yourName, `amar premik er name ${yourName}`, `amar borer name ${yourName}`],
+            questions   :   ['what is your name ', 'what is your boyfriend name ', 'your husband name'],
+            ans         :   [yourName, ` ${yourName}`,` ${yourName}`],
         },
         {
             title       :   'About Developer',
-            questions   :   ['tomar owner k', 'Your Owner', 'tomake baniyeche k', 'Who Is Your Developer'],
-            ans         :   ['Amar owner Anjan', 'Anjan', 'Anjan'],
+            questions   :   ['what is your owner name', 'Your Owner name', 'who made you '],
+            ans         :   ['my owner name is  Anjan', 'Anjan', 'Anjan'],
         }
     ]
 }

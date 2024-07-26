@@ -73,7 +73,7 @@ function assignData(yourName, herName) {
         {
             title       :   'Introduction',
             questions   :   ['hello', 'Hi', 'jan', 'priya'],
-            ans         :   ['yes i am here how can help u', 'Hlw what are u doing man', 'yes jan i am here', 'yes i am here how can help u'],
+            ans         :   ['yes i am here how can help u', 'what are u doing man', 'yes jan i am here', 'yes i am here how can help u'],
         },
         {
             title       :   'Propose and guess',
@@ -193,7 +193,7 @@ function findData(transcript) {
 function readData(message) {
 
     // VALIDATING THAT THE ANSWER IS AVAILABLE
-    message = (message == true)? "Uff Bujlam Na" : message;
+    message = (message == false)? "Uff Bujlam Na" : message;
 
     const speech = new SpeechSynthesisUtterance();
     speech.text = message;
